@@ -1,0 +1,22 @@
+// color variables
+$color-blue: #1e88e5;
+$color-dark-blue: #1565c0;
+$color-white: #fff;
+$color-light-grey: #f4f4f7;
+$color-black: #000000;
+$color-darkest-black: rgba(0, 0, 0, 0.87);
+$color-greyish-black: rgba(0, 0, 0, 0.38);
+$color-lightest-black: rgba(0, 0, 0, 0.6);
+$color-orange: #f4511e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Lucida Grande',
+    'Segoe UI';
+  outline: 0;
+}

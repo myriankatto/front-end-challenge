@@ -1,17 +1,50 @@
-import React from 'react';
-import './styles.css';
-function index() {
-  return (
-    <div className="navbar">
-      <ul className="navbar__list">
-        <li className="navbar__item">Cartõs para negativados</li>
-        <li className="navbar__item">Cartões sem anuidade</li>
-        <li className="navbar__item">Cartões com milhas</li>
-        <li className="navbar__item">Cartões para estudantes</li>
-        <li className="navbar__item">Cartões com mais benefícios</li>
-      </ul>
-    </div>
-  );
+import React, {  Component } from 'react';
+
+import logo from '../../assets/images/logo.svg';
+
+import DropdownMenu from './DropdownMenu';
+
+import { HamburgerCollapse } from 'react-animated-burgers';
+
+import './styles.scss';
+import MobileMenu from './MobileMenu';
+
+class NavBar extends Component {
+  state = {
+    isActive: false,
+  };
+
+  toggleButton = () => {
+    this.setState({
+      isActive: !this.state.isActive,
+    });
+  };
+
+  render() {
+    return (
+      <div className="navbar">
+        <div className="navbar__container">
+          <div className="navbar__right">
+            <div className="burger-menu">
+              <HamburgerCollapse
+                isActive={this.state.isActive}
+                toggleButton={this.toggleButton}
+                barColor="white"
+                buttonWidth={30}
+              />
+            </div>
+           
+            <img className="navbar__image" src={logo} alt="Foregon" />
+
+            <DropdownMenu />
+          </div>
+       {this.state.isActive ? <MobileMenu /> : ''}
+
+          <button className="navbar__button">Descubra seu score grátis</button>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default index;
+export default NavBar;

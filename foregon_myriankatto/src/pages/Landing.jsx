@@ -1,24 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import api from '../services/api';
+import React from 'react';
 
-import Header from '../components/Header';
 import NavBar from '../components/NavBar';
+import Menu from '../components/Menu';
 import CreditCardInfo from '../components/CreditCardInfo';
+import './styles.scss';
 
 function Landing() {
-  const [name, setName] = useState(0);
-
-  useEffect(() => {
-    api.get('/').then((res) => {
-      const { name } = res.data;
-      setName(name);
-    });
-  }, []);
   return (
-    <div>
-      <Header />
+    <div className="landing">
       <NavBar />
-     <CreditCardInfo />
+      <Menu />
+      <CreditCardInfo />
     </div>
   );
 }

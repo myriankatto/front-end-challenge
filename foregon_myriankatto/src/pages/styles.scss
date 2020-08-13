@@ -1,0 +1,15 @@
+.landing{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.burger-menu{
+
+}
+
+@media (min-width: 10900px){
+  .burger-menu{
+    display: none;
+  }
+}
