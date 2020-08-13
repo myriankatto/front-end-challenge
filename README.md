@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# ![Foregon](https://github.com/myriankatto/front-end-challenge/blob/myrian_katto/foregon_myriankatto/src/assets/images/logo-color.svg)
+# ![Foregon](https://github.com/myriankatto/front-end-challenge/blob/myrian_katto/foregon_myriankatto/src/assets/images/logo-blue.svg)
 
 ### Front-end Challenge
 </div> 
