@@ -1,11 +1,12 @@
 import React from 'react';
 
+
 import NavBar from '../components/NavBar';
 import Menu from '../components/Menu';
 import CreditCardInfo from '../components/CreditCardInfo';
 import './styles.scss';
 
-function Landing() {
+const Landing = () => {
   return (
     <div className="landing">
       <NavBar />
@@ -13,6 +14,6 @@ function Landing() {
       <CreditCardInfo />
     </div>
   );
-}
+};
 
 export default Landing;
